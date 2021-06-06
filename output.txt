@@ -1,0 +1,82 @@
+
+Start : Sun Jun  6 20:47:11 2021
+
+OL + S&P500
+ 
+===================================================================
+Stocks which are in Squeeze Two Days before and coming out yesterday 
+===================================================================
+AFL is coming out the squeeze
+AIZ is coming out the squeeze
+AKER is coming out the squeeze
+AMSC is coming out the squeeze
+BEN is coming out the squeeze
+DLR is coming out the squeeze
+ED is coming out the squeeze
+FE is coming out the squeeze
+FRC is coming out the squeeze
+IT is coming out the squeeze
+JNPR is coming out the squeeze
+KO is coming out the squeeze
+LLY is coming out the squeeze
+LUV is coming out the squeeze
+MET is coming out the squeeze
+NEE is coming out the squeeze
+NEXT is coming out the squeeze
+NI is coming out the squeeze
+ORCL is coming out the squeeze
+PEAK is coming out the squeeze
+SEE is coming out the squeeze
+VRSK is coming out the squeeze
+VRSN is coming out the squeeze
+WU is coming out the squeeze
+===================================================================
+Stocks which are in Squeeze Day before and coming out yesterday 
+===================================================================
+AFL is coming out the squeeze
+AIZ is coming out the squeeze
+CF is coming out the squeeze
+ED is coming out the squeeze
+EXC is coming out the squeeze
+FE is coming out the squeeze
+FRC is coming out the squeeze
+JNPR is coming out the squeeze
+KO is coming out the squeeze
+LVS is coming out the squeeze
+MET is coming out the squeeze
+PAYC is coming out the squeeze
+SATS is coming out the squeeze
+VRSK is coming out the squeeze
+==========================================================================================
+Stocks which are in Squeeze for last 3 days CONT. until Two Days before and coming out yesterday 
+==========================================================================================
+AFL is coming out of 3day squeeze 
+AIZ is coming out of 3day squeeze 
+AKER is coming out of 3day squeeze 
+AMSC is coming out of 3day squeeze 
+DLR is coming out of 3day squeeze 
+ED is coming out of 3day squeeze 
+FE is coming out of 3day squeeze 
+FRC is coming out of 3day squeeze 
+JNPR is coming out of 3day squeeze 
+KO is coming out of 3day squeeze 
+LUV is coming out of 3day squeeze 
+MET is coming out of 3day squeeze 
+NEXT is coming out of 3day squeeze 
+NI is coming out of 3day squeeze 
+ORCL is coming out of 3day squeeze 
+PEAK is coming out of 3day squeeze 
+VRSN is coming out of 3day squeeze 
+==========================================================================================
+Stocks which are in Squeeze for last 3 days CONT.  until day before and coming out yesterday 
+==========================================================================================
+AFL is coming out of 3day squeeze 
+AIZ is coming out of 3day squeeze 
+ED is coming out of 3day squeeze 
+FE is coming out of 3day squeeze 
+FRC is coming out of 3day squeeze 
+JNPR is coming out of 3day squeeze 
+KO is coming out of 3day squeeze 
+MET is coming out of 3day squeeze 
+==========================================================================================
+End : Sun Jun  6 20:54:34 2021
