@@ -4,6 +4,7 @@ import time,datetime
 import shutil
 from os import system
 import os.path
+from pandas_datareader import data as pdr
 
 if not os.path.exists('results'):
         os.makedirs('results')
@@ -17,14 +18,14 @@ def createdirectory():
     
 
 def yfinancedownload(csv_file_name):
-        # yf.pdr_override()
+        yf.pdr_override()
         with open(csv_file_name) as f:
             lines = f.read().splitlines()
             for symbol in lines:
-                # print(symbol)
+                # print(1symbol)
                 try:
-                    data = yf.download(symbol,period = "ytd", interval = "1d", treads = True)
-                    # data = yf.download(symbol, start=today.strftime("%m/%d/%y")-30, end=today.strftime("%m/%d/%y"), progress=True, treads = True)
+                    #data = yf.download(symbol,period = "ytd", interval = "1d", treads = True)
+                    data = pdr.get_data_yahoo(symbol, start=pandas.to_datetime('2020-07-15'), end=pandas.to_datetime(datetime.datetime.today() + datetime.timedelta(days=1)), progress=True, treads = True)
                     # data = pdr.get_data_yahoo(symbol, period = "ytd", interval = "1d",progress=True, treads = True)
                     data.to_csv("datasets/{}.csv".format(symbol))
                 except Exception:
