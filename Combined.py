@@ -1,12 +1,20 @@
 import os, pandas
 import yfinance as yf
-import time
+import time,datetime
 import shutil
 from os import system
+import os.path
+
+if not os.path.exists('results'):
+        os.makedirs('results')
+save_path = 'results/'
+filename1 = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+completeName = os.path.join(save_path, filename1+".txt")
 
 def createdirectory():
-    if not os.path.exists('datasets'):
-        os.makedirs('datasets')
+    shutil.rmtree('datasets')
+    os.makedirs('datasets')
+    
 
 def yfinancedownload(csv_file_name):
         # yf.pdr_override()
@@ -52,7 +60,7 @@ def squeezedetection(index_1,index_2):
             df['squeeze_on'] = df.apply(in_squeeze, axis=1)
 
             try:
-                    f = open("output.txt", "a")
+                    f = open(completeName, "a")
                     if df.iloc[index_1]['squeeze_on'] and not df.iloc[index_2]['squeeze_on']:
                             print("{} is coming out the squeeze".format(symbol), file=f)
                             
@@ -92,7 +100,7 @@ def squeezed_3_days_detection(index_1,index_2):
             df['squeeze_on'] = df.apply(in_squeeze, axis=1)
 
             try:
-                    f = open("output.txt", "a")
+                    f = open(completeName, "a")
                     if df.iloc[index_1]['squeeze_on'] and df.iloc[index_1 -1]['squeeze_on'] and df.iloc[index_1-2]['squeeze_on'] and not df.iloc[index_2]['squeeze_on']:
                             print("{} is coming out of 3day squeeze ".format(symbol), file=f)
                             
@@ -111,63 +119,74 @@ def main():
     cls()
     createdirectory()
     
-    f = open("output.txt", "a")
+    
+    f = open(completeName, "a")
+    print ("*******************************************************************" , file=f)
     print ("\nStart : %s" % time.ctime(), file=f)
     
     f.close()
     
-    csv_selection = input ("Enter 1 for OL+S&P500 stocks,\n Enter 2 for 2000-Top-Companies,\n Enter 3 for NASDAQ\n Enter 4 for 1,2,3\n Or any key to skip downloading\n: ")
+    csv_selection = input ("Enter 1 for OLstocks,\nEnter 2 for 2000-Top-Companies,\nEnter 3 for NASDAQ\nEnter 4 for SP500\nEnter 5 for 2,3,4 Data\n Or any key to skip downloading\n: ")
     if(csv_selection == '1'):
-       f = open("output.txt", "a")
-       print ("\nOL + S&P500\n " , file=f)
+       f = open(completeName, "a")
+       print ("Data : OL \n" , file=f)
        f.close()
-       yfinancedownload('OSL_plus_SP500.csv')
+       yfinancedownload('OSL.csv')
        
     elif(csv_selection == '2'):
-       f = open("output.txt", "a")
-       print ("\n2000-Top-Companies\n " , file=f)
+       f = open(completeName, "a")
+       print ("Data :2000-Top-Companies\n " , file=f)
        f.close() 
        yfinancedownload('2000.csv')
        
     elif(csv_selection == '3'):
-       f = open("output.txt", "a")
-       print ("\nNASDAQ\n " , file=f)
+       f = open(completeName, "a")
+       print ("Data :NASDAQ\n " , file=f)
        f.close() 
        yfinancedownload('NASDAQ.csv')
        
     elif(csv_selection == '4'):
-       f = open("output.txt", "a")
-       print ("\nOL + S&P500 + 2000 Top Companies + NASDAQ\n " , file=f)
+       f = open(completeName, "a")
+       print ("Data :SP500\n " , file=f)
+       f.close() 
+       yfinancedownload('SP500.csv')
+       
+    elif(csv_selection == '5'):
+       f = open(completeName, "a")
+       print ("Data : S&P500 + 2000 Top Companies + NASDAQ\n " , file=f)
        f.close()  
-       yfinancedownload('OSL_plus_SP500.csv')
+       yfinancedownload('SP500.csv')
        yfinancedownload('2000.csv')
        yfinancedownload('NASDAQ.csv')
+
+    
     else:
        print ('Skipping Downloading')
     
     print ("Writing to output file started at %s" % time.ctime())   
-    f = open("output.txt", "a")
+    f = open(completeName, "a")
+    
     print ("===================================================================" , file=f)
     print ("Stocks which are in Squeeze Two Days before and coming out yesterday " , file=f)
     print ("===================================================================" , file=f)
     f.close()
     squeezedetection(-3,-1)
     
-    f = open("output.txt", "a")
+    f = open(completeName, "a")
     print ("===================================================================" , file=f)
     print ("Stocks which are in Squeeze Day before and coming out yesterday " , file=f)
     print ("===================================================================" , file=f)
     f.close()
     
     squeezedetection(-2,-1)
-    f = open("output.txt", "a")
+    f = open(completeName, "a")
     print ("==========================================================================================" , file=f) 
     print ("Stocks which are in Squeeze for last 3 days CONT. until Two Days before and coming out yesterday " , file=f)
     print ("==========================================================================================" , file=f)
     f.close()
     
     squeezed_3_days_detection(-3,-1)
-    f = open("output.txt", "a")
+    f = open(completeName, "a")
     print ("==========================================================================================" , file=f)
     print ("Stocks which are in Squeeze for last 3 days CONT.  until day before and coming out yesterday " , file=f)
     print ("==========================================================================================" , file=f) 
@@ -175,13 +194,14 @@ def main():
     
     
     squeezed_3_days_detection(-2,-1) 
-    f = open("output.txt", "a")
+    f = open(completeName, "a")
     print ("==========================================================================================" , file=f) 
     f.close()
     
-    f = open("output.txt", "a")
+    f = open(completeName, "a")
     print ("End : %s" % time.ctime(), file=f)
     print ("Completed at %s \n" % time.ctime())
+    print ("*******************************************************************" , file=f)
     f.close()
 if __name__ == "__main__":
     main()

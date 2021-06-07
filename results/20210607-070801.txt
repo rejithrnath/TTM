@@ -1,0 +1,27 @@
+*******************************************************************
+
+Start : Mon Jun  7 07:08:01 2021
+Data : OL 
+
+===================================================================
+Stocks which are in Squeeze Two Days before and coming out yesterday 
+===================================================================
+AKER is coming out the squeeze
+AMSC is coming out the squeeze
+NEXT is coming out the squeeze
+===================================================================
+Stocks which are in Squeeze Day before and coming out yesterday 
+===================================================================
+SATS is coming out the squeeze
+==========================================================================================
+Stocks which are in Squeeze for last 3 days CONT. until Two Days before and coming out yesterday 
+==========================================================================================
+AKER is coming out of 3day squeeze 
+AMSC is coming out of 3day squeeze 
+NEXT is coming out of 3day squeeze 
+==========================================================================================
+Stocks which are in Squeeze for last 3 days CONT.  until day before and coming out yesterday 
+==========================================================================================
+==========================================================================================
+End : Mon Jun  7 07:10:25 2021
+*******************************************************************
