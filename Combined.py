@@ -24,9 +24,7 @@ def yfinancedownload(csv_file_name):
             for symbol in lines:
                 # print(1symbol)
                 try:
-                    #data = yf.download(symbol,period = "ytd", interval = "1d", treads = True)
                     data = pdr.get_data_yahoo(symbol, start=pandas.to_datetime('2020-07-15'), end=pandas.to_datetime(datetime.datetime.today() + datetime.timedelta(days=1)), progress=True, treads = True)
-                    # data = pdr.get_data_yahoo(symbol, period = "ytd", interval = "1d",progress=True, treads = True)
                     data.to_csv("datasets/{}.csv".format(symbol))
                 except Exception:
                     pass
