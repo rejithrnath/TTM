@@ -5,7 +5,7 @@ import shutil
 from os import system
 import os.path
 from pandas_datareader import data as pdr
-import pandas_ta as ta
+
 
 if not os.path.exists('results'):
         os.makedirs('results')
@@ -84,6 +84,7 @@ def squeezedetection(index_1,index_2):
                     if df.iloc[index_1]['squeeze_on'] and not df.iloc[index_2]['squeeze_on']:
                             # print("{} is coming out the squeeze".format(symbol), file=f)
                             print("{0} is coming out of 3day squeeze. \nStacked Postively = {1}, 21EWM = {2}\n".format(symbol,df.iloc[index_2]['stacked_on'],df.iloc[index_2]['above_21ema_on'] ), file=f)
+                            print("{0} is coming out of 3day squeeze. \nStacked Postively = {1}, 21EWM = {2}\n".format(symbol,df.iloc[index_2]['stacked_on'],df.iloc[index_2]['above_21ema_on'] ))
                             
                     f.close()
             except Exception:
@@ -140,6 +141,7 @@ def squeezed_3_days_detection(index_1,index_2):
                     f = open(completeName, "a")
                     if df.iloc[index_1]['squeeze_on'] and df.iloc[index_1 -1]['squeeze_on'] and df.iloc[index_1-2]['squeeze_on'] and not df.iloc[index_2]['squeeze_on']:
                             print("{0} is coming out of 3day squeeze. \nStacked Postively = {1}, 21dayEWM = {2}\n".format(symbol,df.iloc[index_2]['stacked_on'],df.iloc[index_2]['above_21ema_on'] ), file=f)
+                            print("{0} is coming out of 3day squeeze. \nStacked Postively = {1}, 21EWM = {2}\n".format(symbol,df.iloc[index_2]['stacked_on'],df.iloc[index_2]['above_21ema_on'] ))
                             
                     f.close()
             except Exception:
@@ -210,6 +212,9 @@ def main():
     print ("===================================================================" , file=f)
     print ("Stocks which are in Squeeze Two Days before and coming out yesterday " , file=f)
     print ("===================================================================" , file=f)
+    print ("===================================================================" )
+    print ("Stocks which are in Squeeze Two Days before and coming out yesterday " )
+    print ("===================================================================" )
     f.close()
     squeezedetection(-3,-1)
     
@@ -217,6 +222,9 @@ def main():
     print ("===================================================================" , file=f)
     print ("Stocks which are in Squeeze Day before and coming out yesterday " , file=f)
     print ("===================================================================" , file=f)
+    print ("===================================================================" )
+    print ("Stocks which are in Squeeze Day before and coming out yesterday " )
+    print ("===================================================================" )
     f.close()
     
     squeezedetection(-2,-1)
@@ -224,6 +232,9 @@ def main():
     print ("==========================================================================================" , file=f) 
     print ("Stocks which are in Squeeze for last 3 days CONT. until Two Days before and coming out yesterday " , file=f)
     print ("==========================================================================================" , file=f)
+    print ("==========================================================================================") 
+    print ("Stocks which are in Squeeze for last 3 days CONT. until Two Days before and coming out yesterday ")
+    print ("==========================================================================================" )
     f.close()
     
     squeezed_3_days_detection(-3,-1)
@@ -231,6 +242,9 @@ def main():
     print ("==========================================================================================" , file=f)
     print ("Stocks which are in Squeeze for last 3 days CONT.  until day before and coming out yesterday " , file=f)
     print ("==========================================================================================" , file=f) 
+    print ("==========================================================================================" )
+    print ("Stocks which are in Squeeze for last 3 days CONT.  until day before and coming out yesterday ")
+    print ("==========================================================================================" ) 
     f.close()
     
     
