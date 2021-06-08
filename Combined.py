@@ -5,6 +5,7 @@ import shutil
 from os import system
 import os.path
 from pandas_datareader import data as pdr
+import pandas_ta as ta
 
 if not os.path.exists('results'):
         os.makedirs('results')
@@ -24,8 +25,10 @@ def yfinancedownload(csv_file_name):
             for symbol in lines:
                 # print(1symbol)
                 try:
+                    
                     data = pdr.get_data_yahoo(symbol, start=pandas.to_datetime('2020-07-15'), end=pandas.to_datetime(datetime.datetime.today() + datetime.timedelta(days=1)), progress=True, treads = True)
-                    # data = pdr.get_data_yahoo(symbol, start=pandas.to_datetime('2020-07-15'), end=pandas.to_datetime('2021-04-05'), progress=True, treads = True)
+                    #To enable test data, adjust the end time
+                    # data = pdr.get_data_yahoo(symbol, start=pandas.to_datetime('2020-07-15'), end=pandas.to_datetime('2021-04-06'), progress=True, treads = True)
                     
                     data.to_csv("datasets/{}.csv".format(symbol))
                 except Exception:
@@ -54,7 +57,23 @@ def squeezedetection(index_1,index_2):
 
             df['lower_keltner'] = df['20sma'] - (df['ATR'] * 1.5)
             df['upper_keltner'] = df['20sma'] + (df['ATR'] * 1.5)
-
+            
+            df['8dayEWM']  = df['Close'].ewm(span=8 , adjust=False).mean()
+            df['21dayEWM'] = df['Close'].ewm(span=21, adjust=False).mean()
+            df['34dayEWM'] = df['Close'].ewm(span=34, adjust=False).mean()
+            df['55dayEWM'] = df['Close'].ewm(span=55, adjust=False).mean()
+            df['89dayEWM'] = df['Close'].ewm(span=89, adjust=False).mean()
+            
+            def above_21ema(df):
+                return df['Close']> df['21dayEWM']
+            
+            df['above_21ema_on'] = df.apply(above_21ema, axis=1)
+            
+            def in_stacked(df):
+                return df['Close']> df['8dayEWM'] and df['Close']> df['21dayEWM'] and df['Close']> df['34dayEWM'] and df['Close']> df['55dayEWM'] and df['Close']> df['89dayEWM']
+            
+            df['stacked_on'] = df.apply(in_stacked, axis=1)
+            
             def in_squeeze(df):
                 return df['lower_band'] > df['lower_keltner'] and df['upper_band'] < df['upper_keltner']
 
@@ -63,7 +82,8 @@ def squeezedetection(index_1,index_2):
             try:
                     f = open(completeName, "a")
                     if df.iloc[index_1]['squeeze_on'] and not df.iloc[index_2]['squeeze_on']:
-                            print("{} is coming out the squeeze".format(symbol), file=f)
+                            # print("{} is coming out the squeeze".format(symbol), file=f)
+                            print("{0} is coming out of 3day squeeze. \nStacked Postively = {1}, 21EWM = {2}\n".format(symbol,df.iloc[index_2]['stacked_on'],df.iloc[index_2]['above_21ema_on'] ), file=f)
                             
                     f.close()
             except Exception:
@@ -94,7 +114,23 @@ def squeezed_3_days_detection(index_1,index_2):
 
             df['lower_keltner'] = df['20sma'] - (df['ATR'] * 1.5)
             df['upper_keltner'] = df['20sma'] + (df['ATR'] * 1.5)
-
+            
+            df['8dayEWM']  = df['Close'].ewm(span=8 , adjust=False).mean()
+            df['21dayEWM'] = df['Close'].ewm(span=21, adjust=False).mean()
+            df['34dayEWM'] = df['Close'].ewm(span=34, adjust=False).mean()
+            df['55dayEWM'] = df['Close'].ewm(span=55, adjust=False).mean()
+            df['89dayEWM'] = df['Close'].ewm(span=89, adjust=False).mean()
+            
+            def above_21ema(df):
+                return df['Close']> df['21dayEWM']
+            
+            df['above_21ema_on'] = df.apply(above_21ema, axis=1)
+            
+            def in_stacked(df):
+                return df['Close']> df['8dayEWM'] and df['Close']> df['21dayEWM'] and df['Close']> df['34dayEWM'] and df['Close']> df['55dayEWM'] and df['Close']> df['89dayEWM']
+            
+            df['stacked_on'] = df.apply(in_stacked, axis=1)
+            
             def in_squeeze(df):
                 return df['lower_band'] > df['lower_keltner'] and df['upper_band'] < df['upper_keltner']
 
@@ -103,7 +139,7 @@ def squeezed_3_days_detection(index_1,index_2):
             try:
                     f = open(completeName, "a")
                     if df.iloc[index_1]['squeeze_on'] and df.iloc[index_1 -1]['squeeze_on'] and df.iloc[index_1-2]['squeeze_on'] and not df.iloc[index_2]['squeeze_on']:
-                            print("{} is coming out of 3day squeeze ".format(symbol), file=f)
+                            print("{0} is coming out of 3day squeeze. \nStacked Postively = {1}, 21dayEWM = {2}\n".format(symbol,df.iloc[index_2]['stacked_on'],df.iloc[index_2]['above_21ema_on'] ), file=f)
                             
                     f.close()
             except Exception:
