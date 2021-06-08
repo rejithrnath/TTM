@@ -25,6 +25,8 @@ def yfinancedownload(csv_file_name):
                 # print(1symbol)
                 try:
                     data = pdr.get_data_yahoo(symbol, start=pandas.to_datetime('2020-07-15'), end=pandas.to_datetime(datetime.datetime.today() + datetime.timedelta(days=1)), progress=True, treads = True)
+                    # data = pdr.get_data_yahoo(symbol, start=pandas.to_datetime('2020-07-15'), end=pandas.to_datetime('2021-04-05'), progress=True, treads = True)
+                    
                     data.to_csv("datasets/{}.csv".format(symbol))
                 except Exception:
                     pass
@@ -125,7 +127,7 @@ def main():
     
     f.close()
     
-    csv_selection = input ("Enter 1 for OLstocks,\nEnter 2 for 2000-Top-Companies,\nEnter 3 for NASDAQ\nEnter 4 for SP500\nEnter 5 for 2,3,4 Data\n Or any key to skip downloading\n: ")
+    csv_selection = input ("Enter 1 for OLstocks,\nEnter 2 for 2000-Top-Companies,\nEnter 3 for NASDAQ\nEnter 4 for SP500\nEnter 5 for 2,3,4 Data \nEnter 6 for Test\n Or any key to skip downloading\n: ")
     if(csv_selection == '1'):
        f = open(completeName, "a")
        print ("Data : OL \n" , file=f)
@@ -157,7 +159,11 @@ def main():
        yfinancedownload('SP500.csv')
        yfinancedownload('2000.csv')
        yfinancedownload('NASDAQ.csv')
-
+    elif(csv_selection == '6'):
+       f = open(completeName, "a")
+       print ("Data :Test\n " , file=f)
+       f.close() 
+       yfinancedownload('Test.csv')
     
     else:
        print ('Skipping Downloading')
