@@ -84,7 +84,7 @@ def squeezedetection(index_1,index_2,days):
             if(days == 3):
                 try:
                         f = open(completeName, "a")
-                        if df.iloc[index_1]['squeeze_on'] and df.iloc[index_1 -1]['squeeze_on'] and df.iloc[index_1-2]['squeeze_on'] and not df.iloc[index_2]['squeeze_on']:
+                        if df.iloc[index_1]['squeeze_on'] and df.iloc[index_1 -1]['squeeze_on'] and df.iloc[index_1-2]['squeeze_on'] and df.iloc[index_1]['stacked_on'] and df.iloc[index_1]['above_21ema_on'] and not df.iloc[index_2]['squeeze_on']:
                                 print("{0} is coming out of 3day squeeze. \nStacked Postively = {1}, 21dayEWM = {2}\n".format(symbol,df.iloc[index_2]['stacked_on'],df.iloc[index_2]['above_21ema_on'] ), file=f)
                                 print("{0} is coming out of 3day squeeze. \nStacked Postively = {1}, 21EWM = {2}\n".format(symbol,df.iloc[index_2]['stacked_on'],df.iloc[index_2]['above_21ema_on'] ))
                                 
@@ -95,7 +95,7 @@ def squeezedetection(index_1,index_2,days):
             elif(days == 1):    
                 try:
                     f = open(completeName, "a")
-                    if df.iloc[index_1]['squeeze_on'] and not df.iloc[index_2]['squeeze_on']:
+                    if df.iloc[index_1]['squeeze_on'] and df.iloc[index_1]['stacked_on'] and df.iloc[index_1]['above_21ema_on'] and not df.iloc[index_2]['squeeze_on'] :
                             print("{0} is coming out of squeeze. \nStacked Postively = {1}, 21EWM = {2}\n".format(symbol,df.iloc[index_2]['stacked_on'],df.iloc[index_2]['above_21ema_on'] ), file=f)
                             print("{0} is coming out of squeeze. \nStacked Postively = {1}, 21EWM = {2}\n".format(symbol,df.iloc[index_2]['stacked_on'],df.iloc[index_2]['above_21ema_on'] ))
                             

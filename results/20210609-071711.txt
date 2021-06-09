@@ -1,0 +1,155 @@
+*******************************************************************
+
+Start : Wed Jun  9 07:17:11 2021
+Data :SP500
+ 
+===================================================================
+Stocks which are in Squeeze Two Days before and coming out yesterday 
+===================================================================
+ADM is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+ADP is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+AEE is coming out of squeeze. 
+Stacked Postively = False, 21EWM = True
+
+AWK is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+CINF is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+EA is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+HII is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+HST is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+IBM is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+LIN is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False
+
+LUMN is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+NTAP is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+OTIS is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+RHI is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+SIVB is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+TROW is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+TXT is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+===================================================================
+Stocks which are in Squeeze Day before and coming out yesterday 
+===================================================================
+CAH is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+HST is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+IFF is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+OTIS is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+RHI is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+TROW is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+V is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+==========================================================================================
+Stocks which are in Squeeze for last 3 days CONT. until Two Days before and coming out yesterday 
+==========================================================================================
+ADM is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+ADP is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+AEE is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = True
+
+AWK is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+CINF is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+EA is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+HII is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+HST is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+IBM is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+LIN is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False
+
+NTAP is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+OTIS is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+RHI is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+SIVB is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+TROW is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+TXT is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+==========================================================================================
+Stocks which are in Squeeze for last 3 days CONT.  until day before and coming out yesterday 
+==========================================================================================
+CAH is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+HST is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+OTIS is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+RHI is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+TROW is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+==========================================================================================
+End : Wed Jun  9 07:30:12 2021
+*******************************************************************
