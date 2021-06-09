@@ -1,0 +1,38 @@
+*******************************************************************
+
+Start : Wed Jun  9 09:04:43 2021
+Data : OL 
+
+===================================================================
+Stocks which are in Squeeze Two Days before and coming out yesterday 
+===================================================================
+AKER is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False
+
+GEOS is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+GIG is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+===================================================================
+Stocks which are in Squeeze Day before and coming out yesterday 
+===================================================================
+==========================================================================================
+Stocks which are in Squeeze for last 3 days CONT. until Two Days before and coming out yesterday 
+==========================================================================================
+AKER is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False
+
+GEOS is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+GIG is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+==========================================================================================
+Stocks which are in Squeeze for last 3 days CONT.  until day before and coming out yesterday 
+==========================================================================================
+==========================================================================================
+End : Wed Jun  9 09:50:22 2021
+*******************************************************************

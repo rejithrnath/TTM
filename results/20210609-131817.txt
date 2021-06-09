@@ -1,0 +1,164 @@
+*******************************************************************
+
+Start : Wed Jun  9 13:18:17 2021
+Data : OL 
+
+===================================================================
+Stocks which are in Squeeze Two Days before and coming out yesterday 
+===================================================================
+ANDF is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False
+
+ARCH is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+DSRT is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+FJORD is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+GENT is coming out of squeeze. 
+Stacked Postively = False, 21EWM = True
+
+ITERA is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+LINK is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False
+
+MRCEL is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False
+
+NOAP is coming out of squeeze. 
+Stacked Postively = False, 21EWM = True
+
+NOL is coming out of squeeze. 
+Stacked Postively = False, 21EWM = True
+
+NOM is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+NTS is coming out of squeeze. 
+Stacked Postively = False, 21EWM = True
+
+PROXI is coming out of squeeze. 
+Stacked Postively = False, 21EWM = True
+
+SCANA is coming out of squeeze. 
+Stacked Postively = False, 21EWM = True
+
+SKI is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False
+
+===================================================================
+Stocks which are in Squeeze Day before and coming out yesterday 
+===================================================================
+ANDF is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False
+
+ARCH is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+DSRT is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+FJORD is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+LINK is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False
+
+MRCEL is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False
+
+NOHAL is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+NOM is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True
+
+NTS is coming out of squeeze. 
+Stacked Postively = False, 21EWM = True
+
+SCANA is coming out of squeeze. 
+Stacked Postively = False, 21EWM = True
+
+==========================================================================================
+Stocks which are in Squeeze for last 3 days CONT. until Two Days before and coming out yesterday 
+==========================================================================================
+ANDF is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False
+
+ARCH is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+DSRT is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+FJORD is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+GENT is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = True
+
+ITERA is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+LINK is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False
+
+MRCEL is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False
+
+NOAP is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = True
+
+NOM is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+NTS is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = True
+
+PROXI is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = True
+
+SCANA is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = True
+
+SKI is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False
+
+==========================================================================================
+Stocks which are in Squeeze for last 3 days CONT.  until day before and coming out yesterday 
+==========================================================================================
+ANDF is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False
+
+ARCH is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+DSRT is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+FJORD is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+LINK is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False
+
+MRCEL is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False
+
+NOM is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True
+
+NTS is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = True
+
+SCANA is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = True
+
+==========================================================================================
+End : Wed Jun  9 13:24:11 2021
+*******************************************************************
