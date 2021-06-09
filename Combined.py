@@ -25,10 +25,11 @@ def yfinancedownload(csv_file_name):
             for symbol in lines:
                 # print(1symbol)
                 try:
-                    
-                    # data = pdr.get_data_yahoo(symbol, start=pandas.to_datetime('2020-07-15'), end=pandas.to_datetime(datetime.datetime.today() + datetime.timedelta(days=1)), progress=True, treads = True)
-                    #To enable test data, adjust the end time
-                    data = pdr.get_data_yahoo(symbol, start=pandas.to_datetime('2020-07-15'), end=pandas.to_datetime('2021-04-06'), progress=True, treads = True)
+                    if(csv_file_name == 'Test.csv'):
+                        data = pdr.get_data_yahoo(symbol, start=pandas.to_datetime('2020-07-15'), end=pandas.to_datetime('2021-04-06'), progress=True, treads = True)
+                    else:
+                        data = pdr.get_data_yahoo(symbol, start=pandas.to_datetime('2020-07-15'), end=pandas.to_datetime(datetime.datetime.today() + datetime.timedelta(days=1)), progress=True, treads = True)
+                     
                     
                     data.to_csv("datasets/{}.csv".format(symbol))
                 except Exception:
@@ -162,6 +163,7 @@ def main():
        f.close() 
        yfinancedownload('Test.csv')
     
+
     else:
        print ('Skipping Downloading')
     
