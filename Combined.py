@@ -86,28 +86,15 @@ def squeezedetection(index_1,index_2,days):
             df['squeeze_counter']=df.groupby('squeeze_id').cumcount()+1
             
             
-            
-            
-            if(days == 3):
-                # print("{0} is coming out of 3day squeeze. \nClose = {1}, 8EVM = {2}\n".format(symbol,df.iloc[index_2]['Close'],df.iloc[index_2]['8dayEWM'] ))
-                try:
-                        f = open(completeName, "a")
-                        # if df.iloc[index_1]['squeeze_on'] and df.iloc[index_1 -1]['squeeze_on'] and df.iloc[index_1-2]['squeeze_on'] and df.iloc[index_1]['stacked_on'] and df.iloc[index_1]['above_21ema_on'] and not df.iloc[index_2]['squeeze_on']:
-                        if df.iloc[index_1]['squeeze_on'] and df.iloc[index_1 -1]['squeeze_on'] and df.iloc[index_1-2]['squeeze_on'] and not df.iloc[index_2]['squeeze_on']:
-                                print("{0} is coming out of 3day squeeze. \nStacked Postively = {1}, 21dayEWM = {2} , Total Squeeze days = {3}\n".format(symbol,df.iloc[index_2]['stacked_on'],df.iloc[index_2]['above_21ema_on'],df.iloc[-2]['squeeze_counter'] ), file=f)
-                                print("{0} is coming out of 3day squeeze. \nStacked Postively = {1}, 21EWM = {2}, Total Squeeze days = {3}\n".format(symbol,df.iloc[index_2]['stacked_on'],df.iloc[index_2]['above_21ema_on'],df.iloc[-2]['squeeze_counter'] ))
-                                
-                        f.close()
-                except Exception:
-                    pass
+           
                 
-            elif(days == 1):    
+            if(days == 1):    
                 try:
                     f = open(completeName, "a")
                     # if df.iloc[index_1]['squeeze_on'] and df.iloc[index_1]['stacked_on'] and df.iloc[index_1]['above_21ema_on'] and not df.iloc[index_2]['squeeze_on'] :
                     if df.iloc[index_1]['squeeze_on'] and not df.iloc[index_2]['squeeze_on'] :
-                            print("{0} is coming out of squeeze. \nStacked Postively = {1}, 21EWM = {2}, Total Squeeze days = {3}\n".format(symbol,df.iloc[index_2]['stacked_on'],df.iloc[index_2]['above_21ema_on'] ,df.iloc[-2]['squeeze_counter'] ), file=f)
-                            print("{0} is coming out of squeeze. \nStacked Postively = {1}, 21EWM = {2}, Total Squeeze days = {3}\n".format(symbol,df.iloc[index_2]['stacked_on'],df.iloc[index_2]['above_21ema_on'] ,df.iloc[-2]['squeeze_counter']))
+                            print("{0} is coming out of squeeze. \nStacked Postively = {1}, 21dayEWM = {2} , Sq. days = {3}, Volume = {4}\n".format(symbol,df.iloc[index_2]['stacked_on'],df.iloc[index_2]['above_21ema_on'],df.iloc[index_1]['squeeze_counter'],df.iloc[index_2]['Volume'] ), file=f)
+                            print("{0} is coming out of squeeze. \nStacked Postively = {1}, 21EWM = {2}, Sq. days = {3}, Volume = {4}\n".format(symbol,df.iloc[index_2]['stacked_on'],df.iloc[index_2]['above_21ema_on'],df.iloc[index_1]['squeeze_counter'],df.iloc[index_2]['Volume'] ))
                             
                     f.close()
                 except Exception:
@@ -199,26 +186,7 @@ def main():
     f.close()
     squeezedetection(-2,-1,1)
     
-    f = open(completeName, "a")
-    print ("==========================================================================================" , file=f) 
-    print ("Stocks which are in Squeeze for last 3 days CONT. until Two Days before and coming out yesterday " , file=f)
-    print ("==========================================================================================" , file=f)
-    print ("==========================================================================================") 
-    print ("Stocks which are in Squeeze for last 3 days CONT. until Two Days before and coming out yesterday ")
-    print ("==========================================================================================" )
-    f.close()  
-    squeezedetection(-3,-1,3)
-    
-    f = open(completeName, "a")
-    print ("==========================================================================================" , file=f)
-    print ("Stocks which are in Squeeze for last 3 days CONT.  until day before and coming out yesterday " , file=f)
-    print ("==========================================================================================" , file=f) 
-    print ("==========================================================================================" )
-    print ("Stocks which are in Squeeze for last 3 days CONT.  until day before and coming out yesterday ")
-    print ("==========================================================================================" ) 
-    f.close()
-    squeezedetection(-2,-1,3) 
-    
+      
     f = open(completeName, "a")
     print ("==========================================================================================" , file=f) 
     f.close()
