@@ -1,0 +1,338 @@
+*******************************************************************
+
+Start : Thu Jun 10 05:59:33 2021
+Data :SP500
+ 
+===================================================================
+Stocks which are in Squeeze Two Days before and coming out yesterday 
+===================================================================
+AMZN is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True, Total Squeeze days = 6
+
+AON is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 8
+
+CAG is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 16
+
+CAH is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True, Total Squeeze days = 1
+
+CMS is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 5
+
+CPB is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 7
+
+CSCO is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True, Total Squeeze days = 5
+
+CTLT is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True, Total Squeeze days = 2
+
+FCX is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 1
+
+FDX is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 7
+
+HBAN is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 13
+
+HST is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True, Total Squeeze days = 1
+
+IFF is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True, Total Squeeze days = 1
+
+LB is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 1
+
+LIN is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 1
+
+LNT is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True, Total Squeeze days = 6
+
+MCK is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 3
+
+MKTX is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 5
+
+MTB is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 7
+
+NFLX is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 3
+
+ODFL is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 9
+
+OKE is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True, Total Squeeze days = 11
+
+OTIS is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True, Total Squeeze days = 1
+
+PEG is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 18
+
+RHI is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True, Total Squeeze days = 1
+
+SNA is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 6
+
+SWKS is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 2
+
+TROW is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True, Total Squeeze days = 1
+
+TRV is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 8
+
+UPS is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 7
+
+V is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True, Total Squeeze days = 1
+
+WLTW is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 8
+
+XEL is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 20
+
+===================================================================
+Stocks which are in Squeeze Day before and coming out yesterday 
+===================================================================
+AMZN is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True, Total Squeeze days = 6
+
+AON is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 8
+
+CAG is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 16
+
+CMS is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 5
+
+CPB is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 7
+
+CSCO is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True, Total Squeeze days = 5
+
+CTLT is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True, Total Squeeze days = 2
+
+DISH is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 1
+
+FDX is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 7
+
+HBAN is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 13
+
+LNT is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True, Total Squeeze days = 6
+
+MCK is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 3
+
+MKTX is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 5
+
+MTB is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 7
+
+NFLX is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 3
+
+ODFL is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 9
+
+OKE is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True, Total Squeeze days = 11
+
+PEG is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 18
+
+SNA is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 6
+
+SPGI is coming out of squeeze. 
+Stacked Postively = True, 21EWM = True, Total Squeeze days = 1
+
+SWKS is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 2
+
+TRV is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 8
+
+UPS is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 7
+
+WLTW is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 8
+
+XEL is coming out of squeeze. 
+Stacked Postively = False, 21EWM = False, Total Squeeze days = 20
+
+==========================================================================================
+Stocks which are in Squeeze for last 3 days CONT. until Two Days before and coming out yesterday 
+==========================================================================================
+AMZN is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True , Total Squeeze days = 6
+
+AON is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 8
+
+CAG is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 16
+
+CAH is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True , Total Squeeze days = 1
+
+CMS is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 5
+
+CPB is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 7
+
+CSCO is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True , Total Squeeze days = 5
+
+FCX is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 1
+
+FDX is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 7
+
+HBAN is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 13
+
+HST is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True , Total Squeeze days = 1
+
+LB is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 1
+
+LIN is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 1
+
+LNT is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True , Total Squeeze days = 6
+
+MKTX is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 5
+
+MTB is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 7
+
+ODFL is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 9
+
+OKE is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True , Total Squeeze days = 11
+
+OTIS is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True , Total Squeeze days = 1
+
+PEG is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 18
+
+RHI is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True , Total Squeeze days = 1
+
+SNA is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 6
+
+TROW is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True , Total Squeeze days = 1
+
+TRV is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 8
+
+UPS is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 7
+
+WLTW is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 8
+
+XEL is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 20
+
+==========================================================================================
+Stocks which are in Squeeze for last 3 days CONT.  until day before and coming out yesterday 
+==========================================================================================
+AMZN is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True , Total Squeeze days = 6
+
+AON is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 8
+
+CAG is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 16
+
+CMS is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 5
+
+CPB is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 7
+
+CSCO is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True , Total Squeeze days = 5
+
+FDX is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 7
+
+HBAN is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 13
+
+LNT is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True , Total Squeeze days = 6
+
+MCK is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 3
+
+MKTX is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 5
+
+MTB is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 7
+
+NFLX is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 3
+
+ODFL is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 9
+
+OKE is coming out of 3day squeeze. 
+Stacked Postively = True, 21dayEWM = True , Total Squeeze days = 11
+
+PEG is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 18
+
+SNA is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 6
+
+TRV is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 8
+
+UPS is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 7
+
+WLTW is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 8
+
+XEL is coming out of 3day squeeze. 
+Stacked Postively = False, 21dayEWM = False , Total Squeeze days = 20
+
+==========================================================================================
+End : Thu Jun 10 06:13:26 2021
+*******************************************************************
