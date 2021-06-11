@@ -9,13 +9,26 @@ from pandas_datareader import data as pdr
 
 if not os.path.exists('results'):
         os.makedirs('results')
+        
+if not os.path.exists('exit_results'):
+        os.makedirs('exit_results')
+
+if not os.path.exists('datasets'):
+        os.makedirs('datasets')
+        
 save_path = 'results/'
 filename1 = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
 completeName = os.path.join(save_path, filename1+".txt")
 
+save_exit_path = 'exit_results/'
+filename_exit = datetime.datetime.now().strftime("%Y%m%d")
+completeName_exit = os.path.join(save_exit_path, filename_exit+".txt")
+
 def createdirectory():
     shutil.rmtree('datasets')
     os.makedirs('datasets')
+    
+ 
     
 
 def yfinancedownload(csv_file_name):
@@ -28,7 +41,7 @@ def yfinancedownload(csv_file_name):
                     if(csv_file_name == 'Test.csv'):
                         data = pdr.get_data_yahoo(symbol, start=pandas.to_datetime('2020-07-15'), end=pandas.to_datetime('2021-04-06'), progress=True, treads = True)
                     else:
-                        data = pdr.get_data_yahoo(symbol, start=pandas.to_datetime('2020-07-15'), end=pandas.to_datetime(datetime.datetime.today() + datetime.timedelta(days=1)), progress=True, treads = True)
+                        data = pdr.get_data_yahoo(symbol, start=pandas.to_datetime('2020-07-15'), end=pandas.to_datetime(datetime.datetime.today() + datetime.timedelta(days=1)), interval = "1d", progress=True, treads = True)
                      
                     
                     data.to_csv("datasets/{}.csv".format(symbol))
@@ -112,6 +125,10 @@ def squeezedetection(index_1,index_2,days):
 
 def exittrade():
     dataframes = {}
+    f = open(completeName_exit, "a")
+    print ("*******************************************************************" , file=f)
+    print ("\nStart : %s" % time.ctime(), file=f)
+    f.close()
     for filename in os.listdir('datasets'):
             
             symbol = filename.split(".")[0]
@@ -154,7 +171,8 @@ def exittrade():
             df['stacked_on'] = df.apply(in_stacked, axis=1)
             
             try:
-                    f = open(completeName, "a")
+                    f = open(completeName_exit, "a")
+                    
                     print("{0} -> Stacked Postively = {1}, 21dayEWM = {2}, 34dayEWM = {3}, Momentum = {4} \n".format(symbol,df.iloc[-1]['stacked_on'],df.iloc[-1]['above_21ema_on'],df.iloc[-1]['above_34ema_on'],df.iloc[-1]['momentum_opposite_on'] ), file=f)
                     print("{0} -> Stacked Postively = {1}, 21dayEWM = {2}, 34dayEWM = {3}, Momentum = {4} \n".format(symbol,df.iloc[-1]['stacked_on'],df.iloc[-1]['above_21ema_on'],df.iloc[-1]['above_34ema_on'],df.iloc[-1]['momentum_opposite_on'] ))        
                     f.close()
@@ -200,8 +218,8 @@ def squeeze_print():
 
 
 def main():
-    cls = lambda: system('cls')
-    cls()
+    # cls = lambda: system('cls')
+    # cls()
     createdirectory()
     
     
@@ -211,7 +229,7 @@ def main():
     
     f.close()
     
-    csv_selection = input ("Enter 1 for OLstocks,\nEnter 2 for 2000-Top-Companies,\nEnter 3 for NASDAQ\nEnter 4 for SP500\nEnter 5 for 2,3,4 Data \nEnter 6 for Test \nEnter 7 for Trade Status\n Or any key to skip downloading\n: ")
+    csv_selection = input ("Enter 1 for OLstocks,\nEnter 2 for 2000-Top-Companies,\nEnter 3 for NASDAQ\nEnter 4 for SP500\nEnter 5  OL + S&P500 + Losing Trade? \nEnter 6 for Test \nEnter 7 for Trade Status\n Or any key to skip downloading\n: ")
     if(csv_selection == '1'):
        f = open(completeName, "a")
        print ("Data : OL \n" , file=f)
@@ -242,28 +260,44 @@ def main():
        
     elif(csv_selection == '5'):
        f = open(completeName, "a")
-       print ("Data : S&P500 + 2000 Top Companies + NASDAQ\n " , file=f)
+       print (" OL + S&P500 + Losing Trade?\n " , file=f)
+       print ("OSL: \n", file=f)
        f.close()  
-       yfinancedownload('SP500.csv')
-       yfinancedownload('2000.csv')
-       yfinancedownload('NASDAQ.csv')
+       yfinancedownload('OSL.csv')
        squeeze_print()
-       
-    elif(csv_selection == '6'):
+       shutil.rmtree('datasets')
+       os.makedirs('datasets')
        f = open(completeName, "a")
-       print ("Data :Test\n " , file=f)
+       print ("S&P500: \n", file=f)
        f.close() 
-       yfinancedownload('Test.csv')
+       yfinancedownload('SP500.csv')
        squeeze_print()
-       exittrade()
-       
-    elif(csv_selection == '7'):
+       shutil.rmtree('datasets')
+       os.makedirs('datasets')
        f = open(completeName, "a")
-       print ("Data :Losing Trade?\n " , file=f)
+       print ("Data :Trade\n " , file=f)
        f.close() 
        yfinancedownload('Trade.csv')
     #    squeeze_print()
        exittrade()
+       
+    elif(csv_selection == '6'):
+       f = open(completeName, "a")
+       print ("Data :Trade\n " , file=f)
+       f.close() 
+       yfinancedownload('Trade.csv')
+       squeeze_print()
+       exittrade()
+       
+    elif(csv_selection == '7'):
+        while(True):
+            f = open(completeName, "a")
+            print ("Data :Losing Trade?\n " , file=f)
+            f.close() 
+            yfinancedownload('Trade.csv')
+    #    squeeze_print()
+            exittrade()
+            time.sleep(300)
 
     else:
        print ('Skipping Downloading')
