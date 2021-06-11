@@ -60,6 +60,7 @@ def squeezedetection(index_1,index_2,days):
             df['upper_keltner'] = df['20sma'] + (df['ATR'] * 1.5)
             
             df['8dayEWM']  = df['Close'].ewm(span=8 , adjust=False).mean()
+            df['13dayEWM'] = df['Close'].ewm(span=13, adjust=False).mean()
             df['21dayEWM'] = df['Close'].ewm(span=21, adjust=False).mean()
             df['34dayEWM'] = df['Close'].ewm(span=34, adjust=False).mean()
             df['55dayEWM'] = df['Close'].ewm(span=55, adjust=False).mean()
@@ -71,7 +72,8 @@ def squeezedetection(index_1,index_2,days):
             df['above_21ema_on'] = df.apply(above_21ema, axis=1)
             
             def in_stacked(df):
-                return df['Close']> df['8dayEWM'] and df['Close']> df['21dayEWM'] and df['Close']> df['34dayEWM'] and df['Close']> df['55dayEWM'] and df['Close']> df['89dayEWM']
+                # return df['Close']> df['8dayEWM'] and df['Close']> df['21dayEWM'] and df['Close']> df['34dayEWM'] and df['Close']> df['55dayEWM'] and df['Close']> df['89dayEWM']
+                return df['Close']> df['8dayEWM'] > df['13dayEWM'] and df['13dayEWM'] > df['21dayEWM'] and df['21dayEWM'] > df['34dayEWM'] and df['34dayEWM'] > df['55dayEWM'] and df['55dayEWM'] > df['89dayEWM']
             
             df['stacked_on'] = df.apply(in_stacked, axis=1)
             

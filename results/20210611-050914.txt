@@ -1,6 +1,6 @@
 *******************************************************************
 
-Start : Fri Jun 11 04:29:04 2021
+Start : Fri Jun 11 05:09:15 2021
 Data : OL 
 
 ===================================================================
@@ -13,7 +13,7 @@ ANDF is coming out of squeeze.
 Stacked Postively = False, 21dayEWM = False , Sq. days = 5, Volume = 11471
 
 DSRT is coming out of squeeze. 
-Stacked Postively = True, 21dayEWM = True , Sq. days = 7, Volume = 582743
+Stacked Postively = False, 21dayEWM = True , Sq. days = 7, Volume = 582743
 
 FJORD is coming out of squeeze. 
 Stacked Postively = True, 21dayEWM = True , Sq. days = 53, Volume = 3740
@@ -25,19 +25,19 @@ LINK is coming out of squeeze.
 Stacked Postively = False, 21dayEWM = False , Sq. days = 5, Volume = 266980
 
 MRCEL is coming out of squeeze. 
-Stacked Postively = False, 21dayEWM = False , Sq. days = 4, Volume = 1145327
+Stacked Postively = False, 21dayEWM = False , Sq. days = 4, Volume = 1168327
 
 NOHAL is coming out of squeeze. 
-Stacked Postively = True, 21dayEWM = True , Sq. days = 1, Volume = 13369
+Stacked Postively = False, 21dayEWM = True , Sq. days = 1, Volume = 13369
 
 ODF is coming out of squeeze. 
 Stacked Postively = True, 21dayEWM = True , Sq. days = 4, Volume = 26938
 
 ORN is coming out of squeeze. 
-Stacked Postively = True, 21dayEWM = True , Sq. days = 5, Volume = 8116
+Stacked Postively = False, 21dayEWM = True , Sq. days = 5, Volume = 8116
 
 PSE is coming out of squeeze. 
-Stacked Postively = True, 21dayEWM = True , Sq. days = 10, Volume = 365458
+Stacked Postively = False, 21dayEWM = True , Sq. days = 10, Volume = 365458
 
 ROM is coming out of squeeze. 
 Stacked Postively = False, 21dayEWM = True , Sq. days = 34, Volume = 5204
@@ -46,7 +46,7 @@ SCANA is coming out of squeeze.
 Stacked Postively = False, 21dayEWM = True , Sq. days = 21, Volume = 411461
 
 TRVX is coming out of squeeze. 
-Stacked Postively = True, 21dayEWM = True , Sq. days = 8, Volume = 1445789
+Stacked Postively = False, 21dayEWM = True , Sq. days = 8, Volume = 1445789
 
 ===================================================================
 Stocks which are in Squeeze Day before and coming out yesterday 
@@ -70,14 +70,14 @@ ODF is coming out of squeeze.
 Stacked Postively = True, 21dayEWM = True , Sq. days = 5, Volume = 26938
 
 PSE is coming out of squeeze. 
-Stacked Postively = True, 21dayEWM = True , Sq. days = 11, Volume = 365458
+Stacked Postively = False, 21dayEWM = True , Sq. days = 11, Volume = 365458
 
 ROM is coming out of squeeze. 
 Stacked Postively = False, 21dayEWM = True , Sq. days = 35, Volume = 5204
 
 TRVX is coming out of squeeze. 
-Stacked Postively = True, 21dayEWM = True , Sq. days = 9, Volume = 1445789
+Stacked Postively = False, 21dayEWM = True , Sq. days = 9, Volume = 1445789
 
 ==========================================================================================
-End : Fri Jun 11 04:36:13 2021
+End : Fri Jun 11 05:14:13 2021
 *******************************************************************
