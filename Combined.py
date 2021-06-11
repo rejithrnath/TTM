@@ -110,61 +110,58 @@ def squeezedetection(index_1,index_2,days):
             dataframes[symbol] = df
         
 
+def exittrade():
+    dataframes = {}
+    for filename in os.listdir('datasets'):
+            
+            symbol = filename.split(".")[0]
 
-
-def main():
-    cls = lambda: system('cls')
-    cls()
-    createdirectory()
+           
+            df = pandas.read_csv('datasets/{}'.format(filename))
+            if df.empty: 
+                continue
+            
+            df['8dayEWM']  = df['Close'].ewm(span=8 , adjust=False).mean()
+            df['13dayEWM'] = df['Close'].ewm(span=13, adjust=False).mean()
+            df['21dayEWM'] = df['Close'].ewm(span=21, adjust=False).mean()
+            df['34dayEWM'] = df['Close'].ewm(span=34, adjust=False).mean()
+            df['55dayEWM'] = df['Close'].ewm(span=55, adjust=False).mean()
+            df['89dayEWM'] = df['Close'].ewm(span=89, adjust=False).mean()
+            
+            df['Close2'] = df['Close'].shift()
+            df['Close3'] = df['Close2'].shift()
+            
+            def momentum_opposite(df):
+              return not (df['Close']< df['Close2'] and df['Close2'] < df['Close3'])
+            
+            df['momentum_opposite_on'] = df.apply(momentum_opposite, axis=1)
+            
+            
+            def above_21ema(df):
+                return df['Close']> df['21dayEWM']
+            
+            df['above_21ema_on'] = df.apply(above_21ema, axis=1)
+            
+            def above_34ema(df):
+                return df['Close']> df['34dayEWM']
+            
+            df['above_34ema_on'] = df.apply(above_34ema, axis=1)
+            
+            def in_stacked(df):
+                # return df['Close']> df['8dayEWM'] and df['Close']> df['21dayEWM'] and df['Close']> df['34dayEWM'] and df['Close']> df['55dayEWM'] and df['Close']> df['89dayEWM']
+                return df['Close']> df['8dayEWM'] > df['13dayEWM'] and df['13dayEWM'] > df['21dayEWM'] and df['21dayEWM'] > df['34dayEWM'] and df['34dayEWM'] > df['55dayEWM'] and df['55dayEWM'] > df['89dayEWM']
+            
+            df['stacked_on'] = df.apply(in_stacked, axis=1)
+            
+            try:
+                    f = open(completeName, "a")
+                    print("{0} -> Stacked Postively = {1}, 21dayEWM = {2}, 34dayEWM = {3}, Momentum = {4} \n".format(symbol,df.iloc[-1]['stacked_on'],df.iloc[-1]['above_21ema_on'],df.iloc[-1]['above_34ema_on'],df.iloc[-1]['momentum_opposite_on'] ), file=f)
+                    print("{0} -> Stacked Postively = {1}, 21dayEWM = {2}, 34dayEWM = {3}, Momentum = {4} \n".format(symbol,df.iloc[-1]['stacked_on'],df.iloc[-1]['above_21ema_on'],df.iloc[-1]['above_34ema_on'],df.iloc[-1]['momentum_opposite_on'] ))        
+                    f.close()
+            except Exception:
+                    pass    
     
-    
-    f = open(completeName, "a")
-    print ("*******************************************************************" , file=f)
-    print ("\nStart : %s" % time.ctime(), file=f)
-    
-    f.close()
-    
-    csv_selection = input ("Enter 1 for OLstocks,\nEnter 2 for 2000-Top-Companies,\nEnter 3 for NASDAQ\nEnter 4 for SP500\nEnter 5 for 2,3,4 Data \nEnter 6 for Test\n Or any key to skip downloading\n: ")
-    if(csv_selection == '1'):
-       f = open(completeName, "a")
-       print ("Data : OL \n" , file=f)
-       f.close()
-       yfinancedownload('OSL.csv')
-       
-    elif(csv_selection == '2'):
-       f = open(completeName, "a")
-       print ("Data :2000-Top-Companies\n " , file=f)
-       f.close() 
-       yfinancedownload('2000.csv')
-       
-    elif(csv_selection == '3'):
-       f = open(completeName, "a")
-       print ("Data :NASDAQ\n " , file=f)
-       f.close() 
-       yfinancedownload('NASDAQ.csv')
-       
-    elif(csv_selection == '4'):
-       f = open(completeName, "a")
-       print ("Data :SP500\n " , file=f)
-       f.close() 
-       yfinancedownload('SP500.csv')
-       
-    elif(csv_selection == '5'):
-       f = open(completeName, "a")
-       print ("Data : S&P500 + 2000 Top Companies + NASDAQ\n " , file=f)
-       f.close()  
-       yfinancedownload('SP500.csv')
-       yfinancedownload('2000.csv')
-       yfinancedownload('NASDAQ.csv')
-    elif(csv_selection == '6'):
-       f = open(completeName, "a")
-       print ("Data :Test\n " , file=f)
-       f.close() 
-       yfinancedownload('Test.csv')
-    
-
-    else:
-       print ('Skipping Downloading')
+def squeeze_print():
     
     print ("Writing to output file started at %s" % time.ctime())   
     f = open(completeName, "a")
@@ -198,6 +195,80 @@ def main():
     print ("Completed at %s \n" % time.ctime())
     print ("*******************************************************************" , file=f)
     f.close()
+  
+    
+
+
+def main():
+    cls = lambda: system('cls')
+    cls()
+    createdirectory()
+    
+    
+    f = open(completeName, "a")
+    print ("*******************************************************************" , file=f)
+    print ("\nStart : %s" % time.ctime(), file=f)
+    
+    f.close()
+    
+    csv_selection = input ("Enter 1 for OLstocks,\nEnter 2 for 2000-Top-Companies,\nEnter 3 for NASDAQ\nEnter 4 for SP500\nEnter 5 for 2,3,4 Data \nEnter 6 for Test \nEnter 7 for Trade Status\n Or any key to skip downloading\n: ")
+    if(csv_selection == '1'):
+       f = open(completeName, "a")
+       print ("Data : OL \n" , file=f)
+       f.close()
+       yfinancedownload('OSL.csv')
+       squeeze_print()
+       
+    elif(csv_selection == '2'):
+       f = open(completeName, "a")
+       print ("Data :2000-Top-Companies\n " , file=f)
+       f.close() 
+       yfinancedownload('2000.csv')
+       squeeze_print()
+       
+    elif(csv_selection == '3'):
+       f = open(completeName, "a")
+       print ("Data :NASDAQ\n " , file=f)
+       f.close() 
+       yfinancedownload('NASDAQ.csv')
+       squeeze_print()
+       
+    elif(csv_selection == '4'):
+       f = open(completeName, "a")
+       print ("Data :SP500\n " , file=f)
+       f.close() 
+       yfinancedownload('SP500.csv')
+       squeeze_print()
+       
+    elif(csv_selection == '5'):
+       f = open(completeName, "a")
+       print ("Data : S&P500 + 2000 Top Companies + NASDAQ\n " , file=f)
+       f.close()  
+       yfinancedownload('SP500.csv')
+       yfinancedownload('2000.csv')
+       yfinancedownload('NASDAQ.csv')
+       squeeze_print()
+       
+    elif(csv_selection == '6'):
+       f = open(completeName, "a")
+       print ("Data :Test\n " , file=f)
+       f.close() 
+       yfinancedownload('Test.csv')
+       squeeze_print()
+       exittrade()
+       
+    elif(csv_selection == '7'):
+       f = open(completeName, "a")
+       print ("Data :Losing Trade?\n " , file=f)
+       f.close() 
+       yfinancedownload('Trade.csv')
+    #    squeeze_print()
+       exittrade()
+
+    else:
+       print ('Skipping Downloading')
+       squeeze_print()
+    
     
     
 if __name__ == "__main__":
