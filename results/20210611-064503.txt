@@ -1,0 +1,29 @@
+*******************************************************************
+
+Start : Fri Jun 11 06:45:03 2021
+Data :Losing Trade?
+ 
+AIZ -> Stacked Postively = True, 21dayEWM = True, 34dayEWM = True, Momentum = False 
+
+AMZN -> Stacked Postively = False, 21dayEWM = True, 34dayEWM = True, Momentum = True 
+
+CAH -> Stacked Postively = False, 21dayEWM = True, 34dayEWM = True, Momentum = False 
+
+CSCO -> Stacked Postively = True, 21dayEWM = True, 34dayEWM = True, Momentum = False 
+
+CTLT -> Stacked Postively = False, 21dayEWM = True, 34dayEWM = True, Momentum = True 
+
+GEOS -> Stacked Postively = False, 21dayEWM = False, 34dayEWM = False, Momentum = False 
+
+GOOG -> Stacked Postively = True, 21dayEWM = True, 34dayEWM = True, Momentum = True 
+
+KO -> Stacked Postively = True, 21dayEWM = True, 34dayEWM = True, Momentum = False 
+
+LNT -> Stacked Postively = True, 21dayEWM = True, 34dayEWM = True, Momentum = True 
+
+OKE -> Stacked Postively = True, 21dayEWM = True, 34dayEWM = True, Momentum = False 
+
+SPGI -> Stacked Postively = True, 21dayEWM = True, 34dayEWM = True, Momentum = True 
+
+V -> Stacked Postively = True, 21dayEWM = True, 34dayEWM = True, Momentum = True 
+

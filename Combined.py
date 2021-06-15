@@ -31,7 +31,7 @@ def createdirectory():
  
     
 
-def yfinancedownload(csv_file_name):
+def yfinancedownload(csv_file_name, interval_time):
         yf.pdr_override()
         with open(csv_file_name) as f:
             lines = f.read().splitlines()
@@ -39,9 +39,9 @@ def yfinancedownload(csv_file_name):
                 # print(1symbol)
                 try:
                     if(csv_file_name == 'Test.csv'):
-                        data = pdr.get_data_yahoo(symbol, start=pandas.to_datetime('2020-07-15'), end=pandas.to_datetime('2021-04-06'), progress=True, treads = True)
+                        data = pdr.get_data_yahoo(symbol, start=pandas.to_datetime('2020-07-15'), end=pandas.to_datetime('2021-04-06'),interval = interval_time, progress=True, treads = True)
                     else:
-                        data = pdr.get_data_yahoo(symbol, start=pandas.to_datetime('2020-07-15'), end=pandas.to_datetime(datetime.datetime.today() + datetime.timedelta(days=1)), interval = "1d", progress=True, treads = True)
+                        data = pdr.get_data_yahoo(symbol, start=pandas.to_datetime('2020-07-15'), end=pandas.to_datetime(datetime.datetime.today() + datetime.timedelta(days=1)), interval = interval_time, progress=True, treads = True)
                      
                     
                     data.to_csv("datasets/{}.csv".format(symbol))
@@ -147,11 +147,17 @@ def exittrade():
             
             df['Close2'] = df['Close'].shift()
             df['Close3'] = df['Close2'].shift()
+            df['Close4'] = df['Close3'].shift()
             
             def momentum_opposite(df):
               return not (df['Close']< df['Close2'] and df['Close2'] < df['Close3'])
             
             df['momentum_opposite_on'] = df.apply(momentum_opposite, axis=1)
+            
+            def cont_3_momentum_positive(df):
+              return df['Close']> df['Close2'] and df['Close2'] > df['Close3'] and df['Close3'] > df['Close4']
+            
+            df['cont_3_momentum_positive'] = df.apply(cont_3_momentum_positive, axis=1)
             
             
             def above_21ema(df):
@@ -172,9 +178,19 @@ def exittrade():
             
             try:
                     f = open(completeName_exit, "a")
+                    print ("===================================================================" , file=f)
+                    print ("===================================================================" )
+                    print("{0} -> Last three sessions stock moved up = {1} \n" .format(symbol,df.iloc[-1]['cont_3_momentum_positive'] ), file=f)
+                    print("{0} -> Last three sessions stock moved up = {1} \n" .format(symbol,df.iloc[-1]['cont_3_momentum_positive'] ))
                     
-                    print("{0} -> Stacked Postively = {1}, 21dayEWM = {2}, 34dayEWM = {3}, Momentum = {4} \n".format(symbol,df.iloc[-1]['stacked_on'],df.iloc[-1]['above_21ema_on'],df.iloc[-1]['above_34ema_on'],df.iloc[-1]['momentum_opposite_on'] ), file=f)
-                    print("{0} -> Stacked Postively = {1}, 21dayEWM = {2}, 34dayEWM = {3}, Momentum = {4} \n".format(symbol,df.iloc[-1]['stacked_on'],df.iloc[-1]['above_21ema_on'],df.iloc[-1]['above_34ema_on'],df.iloc[-1]['momentum_opposite_on'] ))        
+                    # if df.iloc[-1]['stacked_on'] == False or df.iloc[-1]['above_21ema_on']== False or df.iloc[-1]['above_34ema_on']== False or df.iloc[-1]['momentum_opposite_on']: 
+                    print("{0} -> Stacked Postively = {1}, 21S-EWM = {2}, 34S-EWM = {3}, Momentum = {4} \n".format(symbol,df.iloc[-1]['stacked_on'],df.iloc[-1]['above_21ema_on'],df.iloc[-1]['above_34ema_on'],df.iloc[-1]['momentum_opposite_on'] ), file=f)
+                    print("{0} -> Stacked Postively = {1}, 21S-EWM = {2}, 34dayEWM = {3}, Momentum = {4} \n".format(symbol,df.iloc[-1]['stacked_on'],df.iloc[-1]['above_21ema_on'],df.iloc[-1]['above_34ema_on'],df.iloc[-1]['momentum_opposite_on'] ))        
+                    # else:
+                        # continue
+                    print ("===================================================================" , file=f)
+                    print ("===================================================================" )
+                    time.sleep(10)
                     f.close()
             except Exception:
                     pass    
@@ -234,28 +250,28 @@ def main():
        f = open(completeName, "a")
        print ("Data : OL \n" , file=f)
        f.close()
-       yfinancedownload('OSL.csv')
+       yfinancedownload('OSL.csv','1d')
        squeeze_print()
        
     elif(csv_selection == '2'):
        f = open(completeName, "a")
        print ("Data :2000-Top-Companies\n " , file=f)
        f.close() 
-       yfinancedownload('2000.csv')
+       yfinancedownload('2000.csv','1d')
        squeeze_print()
        
     elif(csv_selection == '3'):
        f = open(completeName, "a")
        print ("Data :NASDAQ\n " , file=f)
        f.close() 
-       yfinancedownload('NASDAQ.csv')
+       yfinancedownload('NASDAQ.csv','1h')
        squeeze_print()
        
     elif(csv_selection == '4'):
        f = open(completeName, "a")
        print ("Data :SP500\n " , file=f)
        f.close() 
-       yfinancedownload('SP500.csv')
+       yfinancedownload('SP500.csv','1d')
        squeeze_print()
        
     elif(csv_selection == '5'):
@@ -263,21 +279,21 @@ def main():
        print (" OL + S&P500 + Losing Trade?\n " , file=f)
        print ("OSL: \n", file=f)
        f.close()  
-       yfinancedownload('OSL.csv')
+       yfinancedownload('OSL.csv','1d')
        squeeze_print()
        shutil.rmtree('datasets')
        os.makedirs('datasets')
        f = open(completeName, "a")
        print ("S&P500: \n", file=f)
        f.close() 
-       yfinancedownload('SP500.csv')
+       yfinancedownload('SP500.csv','1d')
        squeeze_print()
        shutil.rmtree('datasets')
        os.makedirs('datasets')
        f = open(completeName, "a")
        print ("Data :Trade\n " , file=f)
        f.close() 
-       yfinancedownload('Trade.csv')
+       yfinancedownload('Trade2.csv','1d')
     #    squeeze_print()
        exittrade()
        
@@ -285,19 +301,19 @@ def main():
        f = open(completeName, "a")
        print ("Data :Trade\n " , file=f)
        f.close() 
-       yfinancedownload('Trade.csv')
+       yfinancedownload('nasdaq100.csv','1h')
        squeeze_print()
-       exittrade()
+    #    exittrade()
        
     elif(csv_selection == '7'):
         while(True):
             f = open(completeName, "a")
             print ("Data :Losing Trade?\n " , file=f)
             f.close() 
-            yfinancedownload('Trade.csv')
+            yfinancedownload('nasdaq100.csv','1h')
     #    squeeze_print()
             exittrade()
-            time.sleep(300)
+            time.sleep(3000)
 
     else:
        print ('Skipping Downloading')

@@ -1,0 +1,119 @@
+*******************************************************************
+
+Start : Fri Jun 11 21:40:03 2021
+Data :SP500
+ 
+===================================================================
+Stocks which are in Squeeze Two Days before and coming out yesterday 
+===================================================================
+AAPL is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 10, Volume = 0
+
+AKAM is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 1, Volume = 0
+
+APD is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 8, Volume = 0
+
+AVY is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 6, Volume = 0
+
+BKNG is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 13, Volume = 0
+
+BXP is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 4, Volume = 0
+
+COG is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 1, Volume = 0
+
+CPB is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 1, Volume = 0.0
+
+DISCK is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 2, Volume = 0
+
+DOV is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 1, Volume = 0
+
+EFX is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 15, Volume = 0
+
+EOG is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 29, Volume = 0
+
+FOX is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 1, Volume = 0
+
+GE is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 1, Volume = 0
+
+GIS is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 1, Volume = 0
+
+K is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 1, Volume = 0
+
+MAS is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 1, Volume = 0
+
+MCHP is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 15, Volume = 0
+
+MMM is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 2, Volume = 0
+
+MNST is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 2, Volume = 0
+
+MPWR is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 6, Volume = 0
+
+MXIM is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 1, Volume = 0
+
+NOC is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 1, Volume = 0
+
+NWS is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 4, Volume = 0
+
+PEAK is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 1, Volume = 0
+
+QCOM is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 3, Volume = 0
+
+RHI is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 1, Volume = 0.0
+
+SBAC is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 1, Volume = 0
+
+SCHW is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 1, Volume = 0
+
+SEE is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 9, Volume = 0
+
+TDY is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 20, Volume = 0
+
+UHS is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 13, Volume = 0
+
+VTR is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 1, Volume = 0
+
+WELL is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 1, Volume = 0
+
+XOM is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 4, Volume = 0
+
+===================================================================
+Stocks which are in Squeeze Day before and coming out yesterday 
+===================================================================
+BKNG is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 14, Volume = 0
+

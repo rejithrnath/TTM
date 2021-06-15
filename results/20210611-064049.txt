@@ -1,0 +1,24 @@
+*******************************************************************
+
+Start : Fri Jun 11 06:40:49 2021
+Data :Test
+ 
+===================================================================
+Stocks which are in Squeeze Two Days before and coming out yesterday 
+===================================================================
+GOOG is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 21, Volume = 2164900
+
+===================================================================
+Stocks which are in Squeeze Day before and coming out yesterday 
+===================================================================
+GOOG is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 22, Volume = 2164900
+
+==========================================================================================
+End : Fri Jun 11 06:40:54 2021
+*******************************************************************
+GEOS -> Stacked Postively = False, 21dayEWM = False, 34dayEWM = True, Momentum = False 
+
+GOOG -> Stacked Postively = True, 21dayEWM = True, 34dayEWM = True, Momentum = True 
+

@@ -1,0 +1,95 @@
+*******************************************************************
+
+Start : Tue Jun  8 08:07:49 2021
+Data :2000-Top-Companies
+ 
+===================================================================
+Stocks which are in Squeeze Two Days before and coming out yesterday 
+===================================================================
+ACL is coming out the squeeze
+ADI is coming out the squeeze
+AME is coming out the squeeze
+ASX is coming out the squeeze
+ATW is coming out the squeeze
+AVCT is coming out the squeeze
+AVT is coming out the squeeze
+BXP is coming out the squeeze
+CIG is coming out the squeeze
+COMS is coming out the squeeze
+CTXS is coming out the squeeze
+DSL is coming out the squeeze
+EAT is coming out the squeeze
+ENTG is coming out the squeeze
+GGB is coming out the squeeze
+HLF is coming out the squeeze
+IEX is coming out the squeeze
+ITT is coming out the squeeze
+KLAC is coming out the squeeze
+KNX is coming out the squeeze
+LDG is coming out the squeeze
+LRCX is coming out the squeeze
+LSS is coming out the squeeze
+MCHP is coming out the squeeze
+MHK is coming out the squeeze
+NNN is coming out the squeeze
+NTES is coming out the squeeze
+NUAN is coming out the squeeze
+PNC is coming out the squeeze
+ROL is coming out the squeeze
+RRD is coming out the squeeze
+SBUX is coming out the squeeze
+VMSI is coming out the squeeze
+WTM is coming out the squeeze
+===================================================================
+Stocks which are in Squeeze Day before and coming out yesterday 
+===================================================================
+ADCT is coming out the squeeze
+ADI is coming out the squeeze
+AME is coming out the squeeze
+BXP is coming out the squeeze
+CDNS is coming out the squeeze
+CTXS is coming out the squeeze
+DSL is coming out the squeeze
+EAT is coming out the squeeze
+HAE is coming out the squeeze
+HLF is coming out the squeeze
+LDG is coming out the squeeze
+LRCX is coming out the squeeze
+MCHP is coming out the squeeze
+MHK is coming out the squeeze
+NTES is coming out the squeeze
+RRD is coming out the squeeze
+SBL is coming out the squeeze
+SNPS is coming out the squeeze
+==========================================================================================
+Stocks which are in Squeeze for last 3 days CONT. until Two Days before and coming out yesterday 
+==========================================================================================
+AME is coming out of 3day squeeze 
+AVT is coming out of 3day squeeze 
+CIG is coming out of 3day squeeze 
+CTXS is coming out of 3day squeeze 
+HLF is coming out of 3day squeeze 
+IEX is coming out of 3day squeeze 
+ITT is coming out of 3day squeeze 
+KNX is coming out of 3day squeeze 
+MHK is coming out of 3day squeeze 
+NNN is coming out of 3day squeeze 
+NTES is coming out of 3day squeeze 
+ROL is coming out of 3day squeeze 
+SBUX is coming out of 3day squeeze 
+VMSI is coming out of 3day squeeze 
+WTM is coming out of 3day squeeze 
+==========================================================================================
+Stocks which are in Squeeze for last 3 days CONT.  until day before and coming out yesterday 
+==========================================================================================
+AME is coming out of 3day squeeze 
+CTXS is coming out of 3day squeeze 
+DSL is coming out of 3day squeeze 
+EAT is coming out of 3day squeeze 
+HLF is coming out of 3day squeeze 
+MHK is coming out of 3day squeeze 
+NTES is coming out of 3day squeeze 
+RRD is coming out of 3day squeeze 
+==========================================================================================
+End : Tue Jun  8 08:40:54 2021
+*******************************************************************
