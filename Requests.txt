@@ -1,6 +1,5 @@
 Possibility to have hourly based squeezing. Marius 11/06
 Read data based on hour as a new function, find opening. Make new dataset_hour folder. Marius 11/06
-Bollinger squeeze? - Marius 11/06
 Web based GUI - Marius 11/06
 Color coding for True / False results - Rejith 11/06
 
