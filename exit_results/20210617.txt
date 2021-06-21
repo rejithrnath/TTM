@@ -1,0 +1,177 @@
+*******************************************************************
+
+Start : Thu Jun 17 04:31:38 2021
+===================================================================
+AAPL -> Last three sessions stock moved up = False 
+
+AAPL -> Stacked Postively = False, 21S-EWM = True, 34S-EWM = True, Momentum = True 
+
+===================================================================
+===================================================================
+ACN -> Last three sessions stock moved up = False 
+
+ACN -> Stacked Postively = False, 21S-EWM = False, 34S-EWM = True, Momentum = True 
+
+===================================================================
+===================================================================
+ARKK -> Last three sessions stock moved up = False 
+
+ARKK -> Stacked Postively = False, 21S-EWM = True, 34S-EWM = True, Momentum = False 
+
+===================================================================
+===================================================================
+ATO -> Last three sessions stock moved up = False 
+
+ATO -> Stacked Postively = False, 21S-EWM = True, 34S-EWM = True, Momentum = False 
+
+===================================================================
+===================================================================
+CE -> Last three sessions stock moved up = False 
+
+CE -> Stacked Postively = False, 21S-EWM = False, 34S-EWM = False, Momentum = True 
+
+===================================================================
+===================================================================
+CTLT -> Last three sessions stock moved up = False 
+
+CTLT -> Stacked Postively = False, 21S-EWM = True, 34S-EWM = True, Momentum = False 
+
+===================================================================
+===================================================================
+CTXS -> Last three sessions stock moved up = False 
+
+CTXS -> Stacked Postively = False, 21S-EWM = False, 34S-EWM = False, Momentum = False 
+
+===================================================================
+===================================================================
+DUK -> Last three sessions stock moved up = False 
+
+DUK -> Stacked Postively = False, 21S-EWM = True, 34S-EWM = True, Momentum = True 
+
+===================================================================
+===================================================================
+ETR -> Last three sessions stock moved up = False 
+
+ETR -> Stacked Postively = False, 21S-EWM = True, 34S-EWM = True, Momentum = True 
+
+===================================================================
+===================================================================
+EVRG -> Last three sessions stock moved up = False 
+
+EVRG -> Stacked Postively = True, 21S-EWM = True, 34S-EWM = True, Momentum = True 
+
+===================================================================
+===================================================================
+GOOG -> Last three sessions stock moved up = False 
+
+GOOG -> Stacked Postively = True, 21S-EWM = True, 34S-EWM = True, Momentum = False 
+
+===================================================================
+===================================================================
+ISRG -> Last three sessions stock moved up = False 
+
+ISRG -> Stacked Postively = True, 21S-EWM = True, 34S-EWM = True, Momentum = False 
+
+===================================================================
+===================================================================
+JKHY -> Last three sessions stock moved up = True 
+
+JKHY -> Stacked Postively = True, 21S-EWM = True, 34S-EWM = True, Momentum = True 
+
+===================================================================
+===================================================================
+KMI -> Last three sessions stock moved up = False 
+
+KMI -> Stacked Postively = False, 21S-EWM = True, 34S-EWM = True, Momentum = True 
+
+===================================================================
+===================================================================
+LDOS -> Last three sessions stock moved up = False 
+
+LDOS -> Stacked Postively = True, 21S-EWM = True, 34S-EWM = True, Momentum = True 
+
+===================================================================
+===================================================================
+LRCX -> Last three sessions stock moved up = False 
+
+LRCX -> Stacked Postively = False, 21S-EWM = True, 34S-EWM = True, Momentum = False 
+
+===================================================================
+===================================================================
+MCD -> Last three sessions stock moved up = False 
+
+MCD -> Stacked Postively = True, 21S-EWM = True, 34S-EWM = True, Momentum = False 
+
+===================================================================
+===================================================================
+MCHP -> Last three sessions stock moved up = False 
+
+MCHP -> Stacked Postively = False, 21S-EWM = False, 34S-EWM = True, Momentum = False 
+
+===================================================================
+===================================================================
+MO -> Last three sessions stock moved up = False 
+
+MO -> Stacked Postively = False, 21S-EWM = False, 34S-EWM = False, Momentum = False 
+
+===================================================================
+===================================================================
+NI -> Last three sessions stock moved up = False 
+
+NI -> Stacked Postively = False, 21S-EWM = True, 34S-EWM = True, Momentum = True 
+
+===================================================================
+===================================================================
+OKE -> Last three sessions stock moved up = True 
+
+OKE -> Stacked Postively = True, 21S-EWM = True, 34S-EWM = True, Momentum = True 
+
+===================================================================
+===================================================================
+PAYC -> Last three sessions stock moved up = False 
+
+PAYC -> Stacked Postively = False, 21S-EWM = False, 34S-EWM = False, Momentum = False 
+
+===================================================================
+===================================================================
+PM -> Last three sessions stock moved up = False 
+
+PM -> Stacked Postively = True, 21S-EWM = True, 34S-EWM = True, Momentum = False 
+
+===================================================================
+===================================================================
+RIOT -> Last three sessions stock moved up = False 
+
+RIOT -> Stacked Postively = False, 21S-EWM = True, 34S-EWM = True, Momentum = False 
+
+===================================================================
+===================================================================
+SPGI -> Last three sessions stock moved up = False 
+
+SPGI -> Stacked Postively = True, 21S-EWM = True, 34S-EWM = True, Momentum = False 
+
+===================================================================
+===================================================================
+SPY -> Last three sessions stock moved up = False 
+
+SPY -> Stacked Postively = False, 21S-EWM = True, 34S-EWM = True, Momentum = False 
+
+===================================================================
+===================================================================
+SRE -> Last three sessions stock moved up = False 
+
+SRE -> Stacked Postively = True, 21S-EWM = True, 34S-EWM = True, Momentum = True 
+
+===================================================================
+===================================================================
+SWKS -> Last three sessions stock moved up = False 
+
+SWKS -> Stacked Postively = False, 21S-EWM = True, 34S-EWM = False, Momentum = False 
+
+===================================================================
+===================================================================
+V -> Last three sessions stock moved up = False 
+
+V -> Stacked Postively = False, 21S-EWM = False, 34S-EWM = True, Momentum = False 
+
+===================================================================
