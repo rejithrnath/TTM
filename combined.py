@@ -33,7 +33,7 @@ def createdirectory():
 
 def yfinancedownload(csv_file_name, interval_time):
         yf.pdr_override()
-        with open(csv_file_name) as f:
+        with open("res/" + csv_file_name) as f:
             lines = f.read().splitlines()
             for symbol in lines:
                 # print(1symbol)
