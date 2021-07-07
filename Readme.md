@@ -7,5 +7,14 @@ TTM Squeeze is a volatility and momentum indicator introduced by John Carter of 
 
 
 
+# SETUP 
+
+```
 pip3 install virtualenv
+
 python3 -m venv env
+
+[ activate the virtual environment 'env' based on the OS ]
+
+pip install -r requirements.txt 
+```
