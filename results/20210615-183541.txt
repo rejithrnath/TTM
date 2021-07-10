@@ -1,0 +1,7 @@
+*******************************************************************
+
+Start : Tue Jun 15 18:35:41 2021
+Data :test
+ 
+J is in below bollinger band. Volume = True
+

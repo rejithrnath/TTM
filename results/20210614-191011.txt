@@ -1,0 +1,26 @@
+*******************************************************************
+
+Start : Mon Jun 14 19:10:11 2021
+Data :Trade
+ 
+===================================================================
+Stocks which are in Squeeze Two Days before and coming out yesterday 
+===================================================================
+LRCX is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 9, Volume = 0
+
+MCHP is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 3, Volume = 0
+
+MNST is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 6, Volume = 0
+
+MU is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 7, Volume = 0
+
+===================================================================
+Stocks which are in Squeeze Day before and coming out yesterday 
+===================================================================
+==========================================================================================
+End : Mon Jun 14 19:11:16 2021
+*******************************************************************

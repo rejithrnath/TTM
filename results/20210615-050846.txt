@@ -1,0 +1,269 @@
+*******************************************************************
+
+Start : Tue Jun 15 05:08:46 2021
+ OL + S&P500 + Losing Trade?
+ 
+OSL: 
+
+===================================================================
+Stocks which are in Squeeze Two Days before and coming out yesterday 
+===================================================================
+AEGA is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 1, Volume = 271465
+
+ALNG is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 13, Volume = 3267440
+
+AMSC is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 36, Volume = 51137
+
+ARCH is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 8, Volume = 728399
+
+ARR is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 8, Volume = 321838
+
+AZT is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 2, Volume = 92112
+
+ELABS is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 26, Volume = 9293
+
+ELK is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 1, Volume = 1262356
+
+HDLY is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 1, Volume = 491283
+
+IFISH is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 27, Volume = 10752
+
+NOM is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 28, Volume = 796205
+
+NONG is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 13, Volume = 148042
+
+OCY is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 1, Volume = 499637
+
+OHT is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 5, Volume = 3480
+
+OKEA is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 45, Volume = 100704
+
+OTOVO is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 1, Volume = 610631
+
+SAGA is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 2, Volume = 1313883
+
+===================================================================
+Stocks which are in Squeeze Day before and coming out yesterday 
+===================================================================
+ALNG is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 14, Volume = 3267440
+
+ARR is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 9, Volume = 321838
+
+AZT is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 3, Volume = 92112
+
+ELABS is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 27, Volume = 9293
+
+IFISH is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 28, Volume = 10752
+
+NOM is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 29, Volume = 796205
+
+NONG is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 14, Volume = 148042
+
+OHT is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 6, Volume = 3480
+
+SAGA is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 3, Volume = 1313883
+
+==========================================================================================
+End : Tue Jun 15 05:13:16 2021
+*******************************************************************
+S&P500: 
+
+===================================================================
+Stocks which are in Squeeze Two Days before and coming out yesterday 
+===================================================================
+AAPL is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 4, Volume = 96784100
+
+AFL is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 1, Volume = 2770400
+
+ANTM is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 10, Volume = 794100
+
+BAC is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 9, Volume = 36034100
+
+BIO is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 9, Volume = 146000
+
+CDNS is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 8, Volume = 1055100
+
+CE is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 9, Volume = 774500
+
+CFG is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 9, Volume = 3939400
+
+CINF is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 1, Volume = 326800
+
+CMG is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 3, Volume = 419300
+
+ETR is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 4, Volume = 943400
+
+EXC is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 1, Volume = 4986900
+
+FITB is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 11, Volume = 3908500
+
+GPC is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 9, Volume = 684200
+
+ISRG is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 8, Volume = 421300
+
+KHC is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 7, Volume = 7221900
+
+LEG is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 3, Volume = 660700
+
+LHX is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 11, Volume = 1274200
+
+LNC is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 8, Volume = 987000
+
+LNT is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 1, Volume = 1071700
+
+MET is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 4, Volume = 4529200
+
+MO is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 7, Volume = 14497500
+
+MOS is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 16, Volume = 5476000
+
+NKE is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 7, Volume = 5742700
+
+NTRS is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 9, Volume = 825900
+
+PBCT is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 9, Volume = 3989500
+
+PM is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 10, Volume = 9308800
+
+PNC is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 9, Volume = 1718500
+
+PRU is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 7, Volume = 1739300
+
+SHW is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 9, Volume = 1150000
+
+SJM is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 9, Volume = 505200
+
+SRE is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 24, Volume = 2666100
+
+TROW is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 1, Volume = 653000
+
+UNH is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 9, Volume = 2674900
+
+WFC is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 13, Volume = 25441400
+
+===================================================================
+Stocks which are in Squeeze Day before and coming out yesterday 
+===================================================================
+AAPL is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 5, Volume = 96784100
+
+AFL is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 2, Volume = 2770400
+
+ANTM is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 11, Volume = 794100
+
+BAC is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 10, Volume = 36034100
+
+BIO is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 10, Volume = 146000
+
+CE is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 10, Volume = 774500
+
+CINF is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 2, Volume = 326800
+
+CMG is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 4, Volume = 419300
+
+GPC is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 10, Volume = 684200
+
+KHC is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 8, Volume = 7221900
+
+LEG is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 4, Volume = 660700
+
+LHX is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 12, Volume = 1274200
+
+MO is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 8, Volume = 14497500
+
+NTRS is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 10, Volume = 825900
+
+PAYC is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 1, Volume = 252400
+
+PM is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 11, Volume = 9308800
+
+PRU is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 8, Volume = 1739300
+
+QCOM is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 1, Volume = 7904900
+
+SHW is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 10, Volume = 1150000
+
+==========================================================================================
+End : Tue Jun 15 05:26:10 2021
+*******************************************************************
+Data :Trade
+ 

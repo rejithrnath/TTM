@@ -1,0 +1,89 @@
+*******************************************************************
+
+Start : Fri Jul  9 09:06:11 2021
+Data : OL 
+
+===================================================================
+Stocks which are in Squeeze Two Days before and coming out yesterday 
+===================================================================
+AWDR is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 3, Volume = 78613
+
+BONHR is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 9, Volume = 12411
+
+DOF is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 11, Volume = 998723
+
+MING is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 22, Volume = 137533
+
+NOFI is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 24, Volume = 135704
+
+NONG is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 7, Volume = 155528
+
+OHT is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 4, Volume = 1340828
+
+ORK is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 5, Volume = 1200781
+
+PEN is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 1, Volume = 653747
+
+PEXIP is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 16, Volume = 1980480
+
+TRVX is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 1, Volume = 132325
+
+VISTN is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 22, Volume = 16937
+
+XPLRA is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 9, Volume = 140388
+
+===================================================================
+Stocks which are in Squeeze Day before and coming out yesterday 
+===================================================================
+2020 is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 1, Volume = 75261
+
+AKRBP is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 1, Volume = 692520
+
+BONHR is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 10, Volume = 12411
+
+DOF is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 12, Volume = 998723
+
+MING is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 23, Volume = 137533
+
+NOFI is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 25, Volume = 135704
+
+OHT is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = True , Sq. days = 5, Volume = 1340828
+
+ORK is coming out of squeeze. 
+Stacked Postively = True, 21dayEWM = True , Sq. days = 6, Volume = 1200781
+
+PEN is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 2, Volume = 653747
+
+PEXIP is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 17, Volume = 1980480
+
+VISTN is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 23, Volume = 16937
+
+XPLRA is coming out of squeeze. 
+Stacked Postively = False, 21dayEWM = False , Sq. days = 10, Volume = 140388
+
+==========================================================================================
+End : Fri Jul  9 09:17:24 2021
+*******************************************************************

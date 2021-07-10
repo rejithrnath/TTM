@@ -26,17 +26,14 @@ completeName_exit = os.path.join(save_exit_path, filename_exit+".txt")
 
 def createdirectory():
     shutil.rmtree('datasets')
-    os.makedirs('datasets')
-    
- 
-    
+    os.makedirs('datasets')    
 
 def yfinancedownload(csv_file_name, interval_time):
         yf.pdr_override()
         with open(csv_file_name) as f:
             lines = f.read().splitlines()
             for symbol in lines:
-                # print(1symbol)
+               
                 try:
                     if(csv_file_name == 'Test.csv'):
                         data = pdr.get_data_yahoo(symbol, start=pandas.to_datetime('2020-03-15'), end=pandas.to_datetime('2021-02-01'),interval = interval_time, progress=True, treads = True)
@@ -121,59 +118,6 @@ def squeezedetection(index_1,index_2,days):
                 print ('Skipping!!!')
            
             dataframes[symbol] = df
-
-# def bollinger_low():
-#         dataframes = {}
-#         for filename in os.listdir('datasets'):
-            
-#             symbol = filename.split(".")[0]
-
-           
-#             df = pandas.read_csv('datasets/{}'.format(filename))
-#             if df.empty: 
-#                 continue
-            
-#             df['20sma'] = df['Close'].rolling(window=20).mean()
-#             df['stddev'] = df['Close'].rolling(window=20).std()
-#             df['lower_band'] = df['20sma'] - (2 * df['stddev'])
-#             df['upper_band'] = df['20sma'] + (2 * df['stddev'])
-            
-#             def below_lower_band(df):
-#                 return df['Close']< df['lower_band']
-            
-#             df['below_lower_band_on'] = df.apply(below_lower_band, axis=1)
-            
-#             f = open(completeName, "a")
-#             if (df.iloc[-1]['below_lower_band_on'] ): 
-#                 print("{0} is in below bollinger band. Volume = {1}\n".format(symbol,df.iloc[-1]['Volume'] ), file=f)
-#                 print("{0} is in below bollinger band. Volume = {1}\n".format(symbol,df.iloc[-1]['Volume'] ))
-        
-#             f.close() 
-
-# def mvg_avg__xover():
-#     # Initialize the short and long windows
-
-#     dataframes = {}
-    
-#     for filename in os.listdir('datasets'):
-#         short_window = 8
-#         long_window = 21
-#         symbol = filename.split(".")[0]
-#         df = pandas.read_csv('datasets/{}'.format(filename))
-#         if df.empty: 
-#             continue
-#         df['signal'] =  np.zeros(df.shape[0])
-#         df['short_mavg']  = df['Close'].ewm(span=short_window , adjust=False).mean()
-#         df['long_mavg'] = df['Close'].ewm(span=long_window , adjust=False).mean()
-#         df['signal'] = np.where(df['short_mavg'] > df['long_mavg'], 1.0, 0.0)
-#         df['positions'] = df['signal'].diff()
-        
-#         f = open(completeName, "a")
-#         if (df.iloc[-1]['positions'] ==1 ): 
-#             print("{0} is in moving average crossover. !! BUY !! , Volume = {1}\n".format(symbol,df.iloc[-1]['Volume'] ), file=f)
-#             print("{0} is in moving average crossover. !! BUY !! , Volume = {1}\n".format(symbol,df.iloc[-1]['Volume'] ))
-        
-#         f.close() 
 
 
 def exittrade():
@@ -283,7 +227,6 @@ def squeeze_print():
     print ("*******************************************************************" , file=f)
     f.close()
   
-    
 
 
 def main():
